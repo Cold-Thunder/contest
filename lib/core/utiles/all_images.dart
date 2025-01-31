@@ -20,4 +20,5 @@ class AllImages{
   static String riderIcon = 'assets/icons/rider.svg';
   static String searchIcon = 'assets/icons/search_icon.svg';
   static String starIcon = 'assets/icons/star.svg';
+  static String backIcon ='assets/icons/back_icon.svg';
 }
