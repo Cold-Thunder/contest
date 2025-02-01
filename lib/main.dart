@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           scrolledUnderElevation: 0
         )
       ),
-      initialRoute: RoutesHelper.foodViewScreen,
+      initialRoute: RoutesHelper.homeScreen,
       routes: RoutesHelper.routes()
     );
   }

@@ -2,7 +2,6 @@ import 'package:contest_project/core/utiles/all_colors.dart';
 import 'package:contest_project/core/utiles/all_images.dart';
 import 'package:contest_project/core/utiles/all_texts.dart';
 import 'package:contest_project/core/utiles/styles/all_text_styles.dart';
-import 'package:contest_project/features/home_screen/presentation/widgets/buttom_sheet_show.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -18,16 +17,8 @@ class AddToCartButton extends StatelessWidget {
         children: [
           ElevatedButton(
             onPressed: () {
-              showModalBottomSheet(
-                context: context,
-                isScrollControlled: true,
-                barrierColor: AllColors.transparent18,
-                barrierLabel: 'bottom sheet',
-                backgroundColor: AllColors.transparent18,
-                builder: (context) {
-                  return BottomSheetShow();
-                },
-              );
+
+
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AllColors.deepPurple,

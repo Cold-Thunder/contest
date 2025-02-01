@@ -5,6 +5,7 @@ class AllTexts {
     static String chicken = 'Chicken';
     static String platter = 'Platter';
 
+    static String freeDelivery = 'Free Delivery';
     static String delivery = 'Delivery';
     static String away = 'away';
     static String review = 'Review';
@@ -23,7 +24,13 @@ class AllTexts {
 
     static String exampleText = 'e.g Hello';
     static String textCount = '500';
+    static String popular = 'Popular';
 
+
+    static String rating = '4.5';
+
+    static String offer = '20% off';
+    static String offerPrice = 'upto 300 AED';
 
     // items
     static String foodTitle = 'Rice with chicken';
@@ -38,6 +45,12 @@ class AllTexts {
     static String priceOne = 'AED 120';
     static String priceTwo = 'AED 240';
     static String priceThree = 'AED 360';
+    static String priceFour = 'AED 150';
+
 
     static String priceType = 'AED';
+
+
+    static List<String> items = ['Pizza', 'Chicken', 'Burger', 'Platter', 'Rice'];
+
 }

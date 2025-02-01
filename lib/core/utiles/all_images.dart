@@ -2,10 +2,11 @@
 class AllImages{
   // images
   static String foodImage = 'assets/images/food_image.png';
-  static String backImage = 'assets/images/purple_back_shape.svg';
+  static String backImage = 'assets/images/title_back_image.png';
 
   // icons
   static String addIcon = 'assets/icons/add_icon.svg';
+  static String addPurpleIcon = 'assets/icons/add_purple.svg';
   static String infoIcon = 'assets/icons/bi_info.svg';
   static String clockIcon = 'assets/icons/clock.svg';
   static String deleteIcon = 'assets/icons/delete_icon.svg';
@@ -21,4 +22,5 @@ class AllImages{
   static String searchIcon = 'assets/icons/search_icon.svg';
   static String starIcon = 'assets/icons/star.svg';
   static String backIcon ='assets/icons/back_icon.svg';
+  static String whiteRider = "assets/icons/white_rider.svg";
 }

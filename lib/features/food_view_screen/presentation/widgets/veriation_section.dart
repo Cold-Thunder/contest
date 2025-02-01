@@ -26,6 +26,7 @@ class _VeriationSectionState extends State<VeriationSection> {
     return Container(
       padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
       width: size.width,
+      height: 213,
       color: AllColors.backWhite,
       child: Container(
           height: 198,

@@ -17,6 +17,13 @@ class AllTextStyles{
     fontWeight: FontWeight.w700
   );
 
+  static TextStyle purpleHeadingStyle = TextStyle(
+    fontSize: 14,
+    color: AllColors.deepPurple,
+      fontFamily: 'Bold',
+      fontWeight: FontWeight.w700
+  );
+
   static TextStyle optionalTextStyle = TextStyle(
     fontSize: 16,
     color: AllColors.subTextGrey,
@@ -50,5 +57,26 @@ class AllTextStyles{
     color: AllColors.countGrey,
       fontFamily: 'Semi_Bold',
       fontWeight:  FontWeight.w600
+  );
+
+  static TextStyle ratingCountTextStyle = TextStyle(
+    fontSize: 14,
+    color: AllColors.specialReqBlack,
+      fontFamily: 'Semi_Bold',
+      fontWeight:  FontWeight.w600
+  );
+
+  static TextStyle ratingTextStyle = TextStyle(
+    fontSize: 11,
+    color: AllColors.ratingTextGrey,
+    fontFamily: 'Semi_Bold',
+    fontWeight: FontWeight.w600
+  );
+
+  static TextStyle titleFreeTextStyle = TextStyle(
+    fontSize: 9,
+    color: AllColors.backWhite,
+      fontFamily: 'Semi_Bold',
+      fontWeight: FontWeight.w600
   );
 }
