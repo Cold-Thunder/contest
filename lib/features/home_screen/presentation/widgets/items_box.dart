@@ -16,7 +16,7 @@ class ItemsBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
       child: Column(
         children: [
           Row(
@@ -33,7 +33,7 @@ class ItemsBox extends StatelessWidget {
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               separatorBuilder: (context, index) {
-                return SizedBox(height: 10);
+                return SizedBox(height: 15);
               },
               itemCount: items.length,
               itemBuilder: (context, index) {

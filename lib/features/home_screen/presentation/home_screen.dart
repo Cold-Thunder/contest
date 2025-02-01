@@ -1,4 +1,5 @@
 import 'package:contest_project/core/components/app_bar_action_button.dart';
+import 'package:contest_project/core/components/custom_divider.dart';
 import 'package:contest_project/core/utiles/all_colors.dart';
 import 'package:contest_project/core/utiles/all_images.dart';
 import 'package:contest_project/core/utiles/all_texts.dart';
@@ -70,6 +71,7 @@ class HomeScreen extends StatelessWidget {
                     title: AllTexts.pizza,
                     icon: AllImages.pizzaIcon,
                     items: pizzas),
+                CustomDivider(),
                 ItemsBox(
                     title: AllTexts.pizza,
                     icon: AllImages.pizzaIcon,
