@@ -1,3 +1,4 @@
+import 'package:contest_project/core/utiles/all_colors.dart';
 import 'package:contest_project/core/utiles/styles/all_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -16,7 +17,9 @@ class ItemsBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(top: 8),
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      color: AllColors.backWhite,
       child: Column(
         children: [
           Row(

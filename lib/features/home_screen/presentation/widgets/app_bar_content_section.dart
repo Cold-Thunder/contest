@@ -5,21 +5,20 @@ import 'package:contest_project/core/utiles/all_texts.dart';
 import 'package:contest_project/core/utiles/styles/all_text_styles.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/app_bar_info_middle.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/app_bar_info_section.dart';
-import 'package:contest_project/features/home_screen/presentation/widgets/item_element.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/tabbar_button.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/vertical_offer_title_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AppBarContentSection extends StatefulWidget {
-  AppBarContentSection({super.key});
+  const AppBarContentSection({super.key});
 
   @override
   State<AppBarContentSection> createState() => _AppBarContentSectionState();
 }
 
 class _AppBarContentSectionState extends State<AppBarContentSection> {
-  List<String> items = AllTexts.items;
+  final List<String> items = AllTexts.items;
 
   int clicked = 0;
 
@@ -107,7 +106,6 @@ class _AppBarContentSectionState extends State<AppBarContentSection> {
               ),
             ),
           ),
-          CustomDivider(),
         ],
       ),
     );

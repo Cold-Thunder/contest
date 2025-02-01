@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AllColors.backWhite,
+      backgroundColor: AllColors.backGrey,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -71,7 +71,6 @@ class HomeScreen extends StatelessWidget {
                     title: AllTexts.pizza,
                     icon: AllImages.pizzaIcon,
                     items: pizzas),
-                CustomDivider(),
                 ItemsBox(
                     title: AllTexts.pizza,
                     icon: AllImages.pizzaIcon,
