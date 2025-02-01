@@ -1,7 +1,7 @@
 
 class AllImages{
   // images
-  static String foodImage = 'assets/images/food_image.svg';
+  static String foodImage = 'assets/images/food_image.png';
   static String backImage = 'assets/images/purple_back_shape.svg';
 
   // icons

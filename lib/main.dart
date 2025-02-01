@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          scrolledUnderElevation: 0
+        )
       ),
       initialRoute: RoutesHelper.foodViewScreen,
       routes: RoutesHelper.routes()

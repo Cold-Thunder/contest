@@ -77,6 +77,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Extra_Bold
+      fonts:
+        - asset: assets/fonts/Urbanist-ExtraBold.ttf
+
     - family: Bold
       fonts:
         - asset: assets/fonts/Urbanist-Bold.ttf
@@ -90,6 +94,10 @@ flutter:
     - family: Medium
       fonts:
         - asset: assets/fonts/Urbanist-Medium.ttf
+
+    - family: Regular
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.ttf
 
   #
   # For details regarding fonts from package dependencies,

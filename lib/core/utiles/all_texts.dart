@@ -1,6 +1,6 @@
-class AllTexts{
+class AllTexts {
     static String pizza = 'Pizza';
-    static String rice ='Rice';
+    static String rice = 'Rice';
     static String burger = 'Burger';
     static String chicken = 'Chicken';
     static String platter = 'Platter';
@@ -23,4 +23,21 @@ class AllTexts{
 
     static String exampleText = 'e.g Hello';
     static String textCount = '500';
+
+
+    // items
+    static String foodTitle = 'Rice with chicken';
+    static String itemDes = 'Lorem ipsum dolor sit amet consectetur. Dignissim pulvinar non viverra pellentesque sollicitudin non risus. Proin a placerat nullam scelerisque tortor sit et sed semper.';
+
+    // veriations
+    static String variationOne = '1:1';
+    static String variationTwo = '1:2';
+    static String variationThree = '1:4';
+
+    //price
+    static String priceOne = 'AED 120';
+    static String priceTwo = 'AED 240';
+    static String priceThree = 'AED 360';
+
+    static String priceType = 'AED';
 }
