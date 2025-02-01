@@ -5,18 +5,17 @@ import 'package:contest_project/core/utiles/all_texts.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/app_bar_content_section.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/item_element.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/items_box.dart';
-import 'package:contest_project/features/home_screen/presentation/widgets/tabbar_section.dart';
-import 'package:contest_project/features/home_screen/presentation/widgets/vertical_offer_title_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   List<String> items = AllTexts.items;
 
   List pizzas = [
@@ -36,9 +35,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+
+
+
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AllColors.backGrey,
       body: CustomScrollView(
@@ -57,26 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(width: 15)
             ],
             flexibleSpace: FlexibleSpaceBar(
-              background: Column(
-                children: [
-                  Stack(
-                    alignment: Alignment.topCenter,
-                    clipBehavior: Clip.none,
-                    children: [
-                      Container(
-                        height: 208,
-                        width: size.width,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage(AllImages.foodImage),
-                              fit: BoxFit.cover),
-                        ),
-                      ),
-                      // content heading done
-                    ],
-                  )
-                ],
-              ),
+              background: Image.asset(AllImages.foodImage, fit: BoxFit.cover),
             ),
           ),
           SliverToBoxAdapter(

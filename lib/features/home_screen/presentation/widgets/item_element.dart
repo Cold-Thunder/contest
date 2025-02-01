@@ -68,7 +68,7 @@ class ItemElement extends StatelessWidget {
                       Container(
                         // height: 15,
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 5, vertical: 5),
+                            horizontal: 5, vertical: 3),
                         decoration: BoxDecoration(
                             color: AllColors.lightOrange,
                             borderRadius: BorderRadius.circular(7.65)),
@@ -90,7 +90,7 @@ class ItemElement extends StatelessWidget {
                       ),
                     ],
                   ),
-                  // const SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   // des
                   Text(
                     AllTexts.itemDes,
