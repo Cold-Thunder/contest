@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AllColors{
+  static Color transparent18 = Color(0x2B000000);
   static Color backWhite = Color(0xFFFFFFFF);
   static Color black = Color(0xFF000000);
   static Color deepPurple = Color(0xFFA1045A);
