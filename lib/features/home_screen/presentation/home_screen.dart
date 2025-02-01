@@ -1,15 +1,23 @@
 import 'package:contest_project/core/components/app_bar_action_button.dart';
-import 'package:contest_project/core/components/custom_divider.dart';
 import 'package:contest_project/core/utiles/all_colors.dart';
 import 'package:contest_project/core/utiles/all_images.dart';
 import 'package:contest_project/core/utiles/all_texts.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/app_bar_content_section.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/item_element.dart';
 import 'package:contest_project/features/home_screen/presentation/widgets/items_box.dart';
+import 'package:contest_project/features/home_screen/presentation/widgets/tabbar_section.dart';
+import 'package:contest_project/features/home_screen/presentation/widgets/vertical_offer_title_section.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List<String> items = AllTexts.items;
 
   List pizzas = [
     ItemElement(
@@ -20,6 +28,14 @@ class HomeScreen extends StatelessWidget {
     )
   ];
 
+  int clicked = 0;
+
+  clickedButton(int index) {
+    setState(() {
+      clicked = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -29,7 +45,7 @@ class HomeScreen extends StatelessWidget {
         slivers: [
           SliverAppBar(
             collapsedHeight: 56,
-            expandedHeight: 177,
+            expandedHeight: 208,
             backgroundColor: AllColors.deepPurple,
             pinned: true,
             actions: [
@@ -66,7 +82,7 @@ class HomeScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                AppBarContentSection(),
+                AppBarContentSection(clicked: clicked, clickedFunc: clickedButton),
                 ItemsBox(
                     title: AllTexts.pizza,
                     icon: AllImages.pizzaIcon,

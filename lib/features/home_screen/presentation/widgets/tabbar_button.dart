@@ -18,7 +18,7 @@ class TabbarButton extends StatelessWidget {
         func(id);
       },
       child: Container(
-        margin: const EdgeInsets.only(right: 10),
+        margin: const EdgeInsets.only(left: 15),
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 3),
         height: 40,
         decoration: BoxDecoration(
